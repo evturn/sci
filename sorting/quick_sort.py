@@ -1,4 +1,4 @@
-def quicksort(arr, lo, hi):
+def quick_sort(arr, lo, hi):
     pivot = arr[hi]
     p = lo
 
@@ -9,7 +9,7 @@ def quicksort(arr, lo, hi):
                 p += 1
 
         arr[p], arr[hi] = arr[hi], arr[p]
-        quicksort(arr, lo, p - 1)
-        quicksort(arr, p + 1, hi)
+        quick_sort(arr, lo, p - 1)
+        quick_sort(arr, p + 1, hi)
 
     return arr
